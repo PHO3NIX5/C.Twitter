@@ -13,6 +13,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -40,5 +41,28 @@
 </center>
 
 <script src="kwitter_page.js"></script>
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.0/firebase-analytics.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+	  apiKey: "AIzaSyBjSSR4Srmyw46kzTKQqJdwzTagWuzN_W0",
+	  authDomain: "new-cursed-twitter.firebaseapp.com",
+	  projectId: "new-cursed-twitter",
+	  storageBucket: "new-cursed-twitter.appspot.com",
+	  messagingSenderId: "751486570519",
+	  appId: "1:751486570519:web:0900f3236850ebc4d50c52",
+	  measurementId: "G-RMDQMKP25P"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
